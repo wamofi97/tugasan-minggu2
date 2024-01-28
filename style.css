@@ -18,10 +18,6 @@ a {
     color: #FFFFFF;   
 }
 
-a:hover{
-    color: #F4BA30;
-}
-
 .header{
     display: flex;
     flex-direction: row;
@@ -145,7 +141,7 @@ img{
 .price{
     display: flex;
     flex-direction: row;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 .lastbook:hover{
@@ -188,7 +184,8 @@ img{
 .book-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    gap: px;
     width: 80%;
     max-width: 1300px;
     padding: 24px;
@@ -202,6 +199,13 @@ img{
     display: flex;
     flex-direction: row;
     gap: 16px ;
+    width: 60%;
+    justify-content: center;
+}
+
+.book-description > img{
+    width: 314px;
+    height: 476px;
 }
 
 .book-title{
@@ -209,14 +213,57 @@ img{
     padding: 10px 0;
 }
 
+.book-details{
+    min-width: 250px;
+}
+
+table{
+    margin: 8px 0;
+}
+
 td{
-    padding-right: 10px;
+    padding: 4px 16px 4px 0;
+}
+
+.book-cta{
+    margin-top: 12px;
+    display: flex;
+    gap: 4px;
+    text-wrap: none;
+}
+
+.buy-now{
+    padding: 8px 16px;
+    border-radius: 16px;
+    background-color: #F4CE47;
+    color: #000000;
+}
+
+.buy-now:hover{
+    background-color: #2A2C2E;
+    color: #F4CE47;
+    cursor: pointer;
+}
+
+.add-to-bag{
+    padding: 8px 16px;
+    border-radius: 16px;
+    border: 2px solid #F4CE47;
+    background-color: #2A2C2E;
+    color: #F4CE47;
+    
+}
+
+.add-to-bag:hover{
+    background-color: #F4CE47;
+    color: #000000;
+    cursor: pointer;
 }
 
 .summary-reception{
-    padding-left: 80px;
-    min-width: 300px;
+    min-width: 200px;
     max-width: 1000px;
+    flex-grow: 3;
 }
 
 .summary{
@@ -291,6 +338,21 @@ td{
     padding: 24px 0 8px 0;
 }
 
+.add-review{
+    padding: 16px 24px;
+    border-radius: 16px;
+    border: 2px solid #000000;
+    background-color: #F6F4F0;
+    color: #000000;
+}
+
+.add-review:hover{
+    border: 2px solid #000000;
+    background-color: #F4CE47;
+    color: #000000;
+    cursor: pointer;
+}
+
 .rev-row{
     display: flex;
     flex-direction: row;
@@ -304,7 +366,6 @@ td{
     background-color: #FFFFFF;
     max-width: 640px;
     border-radius: 12px;
-    
 }
 
 .rev-content{
@@ -317,29 +378,45 @@ td{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding: 8px;
 }
 
 .avatar{
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 8px;
 }
 
 .avatar-img{
-    border-radius: 100%;
-    width: 20px;
-    height : 20px
+    border-radius: 50%;
+    width: 40px;
+    height : 40px
 }
-
 
 .rev-content a{
     color: #000000;
     text-decoration: underline;
 }
 
+a:hover{
+    color: #F4BA30;
+}
 
-@media(width <= 1000px){
+@media(width <= 1300px){
+    .summary-reception{
+        max-width: 300px;
+        padding-left: 0;
+    }
+
+    .book-cta{
+        flex-wrap: wrap;
+    }
+    
+}
+
+@media(width <= 1086px){
     .header{
         flex-direction: column;
         width: 100%;
@@ -365,8 +442,24 @@ td{
     }
 
     .summary-reception{
-        padding-left: 0;
+        max-width: none;
         margin-top: 20px;
+    }
+}
+
+@media(width <= 768px){
+    .book-description{
+        flex-wrap: wrap;
+        min-width: none;
+    }
+
+    .book-description > img{
+        width: 200px;
+        height: auto;
+    }
+
+    .book-details{
+        min-width: none;
     }
 }
 
