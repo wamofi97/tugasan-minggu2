@@ -263,6 +263,7 @@ td{
     gap: 8px;
     flex-wrap: wrap;
     margin-top: 8px;
+    justify-content: center;
 }
 
 .rec-card{
