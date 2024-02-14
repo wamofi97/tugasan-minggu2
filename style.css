@@ -156,7 +156,12 @@ img{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 24px;
+    padding: 24px; 
+}
+
+.social-icons{
+    display: flex;
+    gap: 16px;
 }
 
 .copyright{
@@ -404,6 +409,120 @@ a:hover{
     color: #F4BA30;
 }
 
+.header-register{
+    margin: 20px;
+    width: calc(100% - 40px);
+    padding: 20px 20px;
+    background-color: #2A2C2E;
+    color: #FFFFFF;
+    border-radius: 20px;
+    width: calc(100%-20px);
+    padding: 20px 20px;
+}
+
+.container-container-register{
+    margin: 0 20px 20px 20px;
+    width: calc(100% - 40px);
+    padding: 20px 20px;
+    background-color: #2A2C2E;
+    color: #FFFFFF;
+    border-radius: 20px;
+    width: calc(100%-20px);
+    padding: 20px 20px;
+}
+
+.container-register{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 70%;
+}
+
+.reg-book-details > form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.registree-details > form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.firsthr-lines{
+    position: relative;
+    margin-bottom: 16px;
+    overflow: hidden;
+  }
+
+.firsthr-lines:after{
+    content:" ";
+    height: 2px;
+    width: 100%;
+    background: white;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 120px;
+    
+  }
+
+ .sechr-lines{
+    position: relative;
+    margin-bottom: 16px;
+    overflow: hidden;
+  }
+
+.sechr-lines:after{
+    content:" ";
+    height: 2px;
+    width: 100%;
+    background: white;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 140px;
+  }
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.row > p{
+    width: 200px;
+}
+
+.row > input{
+    padding: 12px 12px;
+    border-radius: 12px;
+    width: 100%;
+}
+
+.availability-option{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.availability > p{
+    width: 200px;
+}
+
+.availability-option > label {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.submit-btn{
+    background-color: #F4CE47;
+    border-radius: 12px;
+    padding: 12px;
+    cursor: pointer;
+}
+
 @media(width <= 1300px){
     .summary-reception{
         max-width: 300px;
@@ -460,6 +579,10 @@ a:hover{
 
     .book-details{
         min-width: none;
+    }
+
+    .container-register{
+        width: 100%;
     }
 }
 
